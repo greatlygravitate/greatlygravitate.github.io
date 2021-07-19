@@ -1,3 +1,3 @@
 function open(url) {
-  window.open(url);
+  window.location.replace(url);
 }
