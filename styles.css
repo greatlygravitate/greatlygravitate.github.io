@@ -11,6 +11,8 @@ body {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  font-family : inherit;
+  font-size: 1em;
 }
 
 .btn:hover {
