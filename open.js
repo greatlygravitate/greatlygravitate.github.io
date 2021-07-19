@@ -1,3 +1,3 @@
-function open() {
-  window.location.replace('https://greatlygravitate.github.io/create.html');
+function load() {
+  window.open("example.com");
 }
