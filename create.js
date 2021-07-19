@@ -1,6 +1,6 @@
 function create() {
-  var name = getElementById("name").value;
-  var content = getElementById("text").value;
+  var name = document.getElementById("name").value;
+  var content = document.getElementById("text").value;
   var data = { 
     name: "user",
     content: "content"
