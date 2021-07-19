@@ -2,8 +2,8 @@ function create() {
   var name = getElementById("name").value;
   var content = getElementById("text").value;
   var data = { 
-    name: "user";
-    content: "content";
+    name: "user",
+    content: "content"
   };
   data.name = name;
   data.content = content;
