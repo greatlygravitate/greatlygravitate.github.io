@@ -9,7 +9,7 @@ function create() {
   data.content = content;
   console.log(data);
   
-  /* fetch('https://greatlygravitate.github.io/posts.json', {
+  fetch('https://greatlygravitate.github.io/posts.json', {
     method: 'POST', 
     headers: {
       'Content-Type': 'application/json',
@@ -22,6 +22,6 @@ function create() {
   })
   .catch((error) => {
     console.error('Error: ', error);
-  }); */
+  });
 
 }
