@@ -9,19 +9,20 @@ function create() {
   data.content = content;
   console.log(data);
   
-  fetch('https://greatlygravitate.github.io/posts.json', {
-    method: 'POST', 
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Success: ', data);
-  })
-  .catch((error) => {
-    console.error('Error: ', error);
-  });
+  
+var url = "https://greatlygravitate.github.io/posts.json";
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+xhr.send(data);
 
 }
