@@ -1,4 +1,4 @@
-ar renderer, scene, camera, banana;
+var renderer, scene, camera, banana;
 
 var ww = window.innerWidth,
 	wh = window.innerHeight;
