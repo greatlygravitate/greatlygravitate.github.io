@@ -19,7 +19,7 @@ body {
   opacity: 1;
 }
 
-input, select, textarea {
+input, select, textarea, button {
   font-family: inherit;
 }
 
