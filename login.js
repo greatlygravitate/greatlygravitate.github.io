@@ -4,8 +4,8 @@ function send() {
     name: ""
   };
 
-  data.feedback = document.getElementById("feedback");
-  data.name = document.getElementById("name");
+  data.feedback = document.getElementById("feedback").value;
+  data.name = document.getElementById("name").value;
   console.log(data);
 
   fetch('https://feedback.deta.dev/feedback', {
