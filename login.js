@@ -12,7 +12,8 @@ function send() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      mode: 'cors', // no-cors, *cors, same-origin
+       mode: 'no-cors', // no-cors, *cors, same-origin
+       'Access-Control-Allow-Origin':'*',
     },
     body: JSON.stringify(data),
   })
