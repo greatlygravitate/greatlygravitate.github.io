@@ -8,7 +8,7 @@ console.log("checking if mobile...");
 console.log(window.mobileCheck());
 
 var result = window.mobileCheck();
-if (result = true) {
+if (result = false) {
   location.replace("https://greatlygravitate.deta.dev/feedback/classic");
 } else {
   location.replace("https://greatlygravitate.deta.dev/feedback");
